@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_i_wvQDKbEeiYi_eU6IExpQ" label="FRI" language="java" technicalLabel="FRI" author="_i_wvQTKbEeiYi_eU6IExpQ" productVersion="Talend Integration Cloud Elastic Edition-6.5.1.20180116_1512" url="{&quot;location&quot;:&quot;https://github.com/friys/Talend_Cloud2&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" bigData="false"/>
+  <TalendProperties:User xmi:id="_i_wvQTKbEeiYi_eU6IExpQ" login="cedrichoupe@eval7733.talend.com" firstName="CEDRIC" lastName="HOUPE" type="DI"/>
+</xmi:XMI>
