@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendMetadata:FTPConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_xVwQEDMtEeiAFN56KVKB7g" Host="ftp1.ysance.com" Port="2287" Username="florian" Password="8Hks0vhVZYvW5Unvpot9PA==" Mode="Passive" Ecoding="ISO-8859-15" SFTP="true" Method="Password" Privatekey="" Passphrase="" KeystoreFile="" KeystorePassword="" Proxyhost="" Proxyport="" Proxyuser="" Proxypassword="" CustomEncode="ISO-8859-15"/>
