@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_m-juwDNZEeiJAOPdbzIinQ" name="StateCodes" dataPackage="_m-juwTNZEeiJAOPdbzIinQ" Server="Localhost 127.0.0.1" FilePath="C:/Users/florian.richard/Documents/Formation/Talend/Formation/Talend_DI/Talend_DI/Sources/States.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" HeaderValue="0" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_m-juwTNZEeiJAOPdbzIinQ" name="default" dataManager="_m-juwDNZEeiJAOPdbzIinQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_m-juwjNZEeiJAOPdbzIinQ" id="_jpAaIDNXEeiJAOPdbzIinQ" label="StateCodesSchema">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m-juwzNZEeiJAOPdbzIinQ" label="StateCode" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m-juxDNZEeiJAOPdbzIinQ" label="StateName" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
