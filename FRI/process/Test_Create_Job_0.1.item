@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" name="Default"/>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="ftp_hote" prompt="ftp_hote?" promptNeeded="false" type="id_String" value="&quot;ftp1.ysance.com&quot;"/>
+    <contextParameter comment="" name="ftp_port" prompt="ftp_port?" promptNeeded="false" type="id_Integer" value="2287"/>
+    <contextParameter comment="" name="ftp_identifiant" prompt="ftp_identifiant?" promptNeeded="false" type="id_String" value="&quot;florian&quot;"/>
+    <contextParameter comment="" name="ftp_password" prompt="ftp_password?" promptNeeded="false" type="id_Password" value="8Hks0vhVZYvW5Unvpot9PA=="/>
+  </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
@@ -283,12 +288,10 @@
   </node>
   <node componentName="tFTPConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPConnection_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_xVjbwDMtEeiAFN56KVKB7g" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;ftp1.ysance.com&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="2287"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;florian&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="4wramMuQEo9N6Gpq04IBoA=="/>
+    <elementParameter field="TEXT" name="HOST" value="context.ftp_hote"/>
+    <elementParameter field="TEXT" name="PORT" value="context.ftp_port"/>
+    <elementParameter field="TEXT" name="USER" value="context.ftp_identifiant"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kud5cU+SwRxPQZVmjryzBAby"/>
     <elementParameter field="CHECK" name="SFTP" value="true"/>
     <elementParameter field="CHECK" name="FTPS" value="false" show="false"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" value="&quot;&quot;" show="false"/>
