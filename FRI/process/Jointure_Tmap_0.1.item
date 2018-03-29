@@ -247,7 +247,7 @@
         <mapperTableEntries name="City" type="id_String" nullable="true"/>
         <mapperTableEntries name="State" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row2" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+      <inputTables sizeState="INTERMEDIATE" name="row2" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="StateCode" expression="StringHandling.UPCASE(row1.State) " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="StateName" type="id_String" nullable="true"/>
       </inputTables>
