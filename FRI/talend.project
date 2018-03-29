@@ -24,6 +24,7 @@
       <relatedItems xmi:id="_kOgLkDKhEeiovKdgtDuX-g" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_kOgLkTKhEeiovKdgtDuX-g" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_kOgLkjKhEeiovKdgtDuX-g" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Hiq-MDMuEeiAFN56KVKB7g" id="_xVjbwDMtEeiAFN56KVKB7g" version="Latest" type="property"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_kOhZsDKhEeiovKdgtDuX-g">
       <baseItem xmi:id="_kOhZsTKhEeiovKdgtDuX-g" id="_QKNNUGZ8EeWm5YvsrIoYzQ" version="0.1" type="job"/>
