@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="ftp_hote" prompt="ftp_hote?" promptNeeded="false" repositoryContextId="_poF_0DM4EeiAFN56KVKB7g" type="id_String" value="&quot;ftp1.ysance.com&quot;"/>
-    <contextParameter comment="" name="ftp_identifiant" prompt="ftp_identifiant?" promptNeeded="false" repositoryContextId="_poF_0DM4EeiAFN56KVKB7g" type="id_String" value="&quot;florian&quot;"/>
-    <contextParameter comment="" name="ftp_password" prompt="ftp_password?" promptNeeded="false" repositoryContextId="_poF_0DM4EeiAFN56KVKB7g" type="id_Password" value="8Hks0vhVZYvW5Unvpot9PA=="/>
-    <contextParameter comment="" name="ftp_port" prompt="ftp_port?" promptNeeded="false" repositoryContextId="_poF_0DM4EeiAFN56KVKB7g" type="id_Integer" value="2287"/>
+    <contextParameter comment="" name="connection_sftp_host" prompt="connection_sftp_host?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_port" prompt="connection_sftp_port?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="connection_sftp_username" prompt="connection_sftp_username?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_password" prompt="connection_sftp_password?" promptNeeded="false" type="id_Password" value=""/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
