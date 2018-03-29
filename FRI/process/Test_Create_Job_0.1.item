@@ -290,10 +290,10 @@
   </node>
   <node componentName="tFTPConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPConnection_1" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="context.ftp_hote"/>
-    <elementParameter field="TEXT" name="PORT" value="context.ftp_port"/>
-    <elementParameter field="TEXT" name="USER" value="context.ftp_identifiant"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kud5cU+SwRxPQZVmjryzBAby"/>
+    <elementParameter field="TEXT" name="HOST" value="context.connection_sftp_host"/>
+    <elementParameter field="TEXT" name="PORT" value="context.connection_sftp_port"/>
+    <elementParameter field="TEXT" name="USER" value="context.connection_sftp_username"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufONy16xVNlL2/f9mUUxBwAwPhdviHmkQSICv+S4XeRYQ=="/>
     <elementParameter field="CHECK" name="SFTP" value="true"/>
     <elementParameter field="CHECK" name="FTPS" value="false" show="false"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" value="&quot;&quot;" show="false"/>
