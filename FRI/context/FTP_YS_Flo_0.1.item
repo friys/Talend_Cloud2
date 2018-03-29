@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_poHN8DM4EeiAFN56KVKB7g" name="Default">
+  <contextParameter xmi:id="_popZcDM4EeiAFN56KVKB7g" comment="" name="ftp_hote" prompt="ftp_hote?" promptNeeded="false" type="id_String" value="&quot;ftp1.ysance.com&quot;"/>
+  <contextParameter xmi:id="_popZcTM4EeiAFN56KVKB7g" comment="" name="ftp_port" prompt="ftp_port?" promptNeeded="false" type="id_Integer" value="2287"/>
+  <contextParameter xmi:id="_popZcjM4EeiAFN56KVKB7g" comment="" name="ftp_identifiant" prompt="ftp_identifiant?" promptNeeded="false" type="id_String" value="&quot;florian&quot;"/>
+  <contextParameter xmi:id="_poqAgDM4EeiAFN56KVKB7g" comment="" name="ftp_password" prompt="ftp_password?" promptNeeded="false" type="id_Password" value="dre5ePhupa"/>
+</talendfile:ContextType>
