@@ -282,8 +282,8 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="nom">
-        <mapperTableEntries name="S21_G00_06_001" expression="&quot;S21.G00.06.001&quot;.equals(row3.Code)?row3.Valeur:&quot;&quot;" type="id_String" nullable="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="nom" expressionFilter="&quot;S21.G00.06.001&quot;.equals(row3.Code)" activateExpressionFilter="true">
+        <mapperTableEntries name="S21_G00_06_001" expression="row3.Valeur" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Code" type="id_String" nullable="true"/>
