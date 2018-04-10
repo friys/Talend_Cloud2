@@ -741,7 +741,7 @@
   </node>
   <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="2176">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_1" show="false"/>
-    <elementParameter field="FILE" name="FILE_NAME" value="&quot;C:/Users/florian.richard/Documents/Client/Mutex/File/OUT/&quot; + ((String)globalMap.get(&quot;row24.filename_new&quot;)) + &quot;.DSN&quot;"/>
+    <elementParameter field="FILE" name="FILE_NAME" value="&quot;C:/Users/florian.richard/Documents/Client/Mutex/File/OUT/&quot; + ((String)globalMap.get(&quot;row24.filename_new&quot;))"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="2304">
