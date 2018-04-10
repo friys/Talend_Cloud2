@@ -866,7 +866,7 @@
   </node>
   <node componentName="tDenormalizeSortedRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="1024">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDenormalizeSortedRow_1" show="false"/>
-    <elementParameter field="TEXT" name="ROW_COUNT" value="*"/>
+    <elementParameter field="TEXT" name="ROW_COUNT" value="4"/>
     <elementParameter field="TABLE" name="DENORMALIZE_COLUMNS">
       <elementValue elementRef="INPUT_COLUMN" value="filename_old"/>
       <elementValue elementRef="DELIMITER" value="&quot;;&quot;"/>
