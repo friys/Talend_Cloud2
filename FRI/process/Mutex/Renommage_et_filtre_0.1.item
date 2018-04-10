@@ -921,19 +921,24 @@
       <column comment="" key="false" length="14" name="S21_G00_06_001" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tDenormalize" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="1024">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDenormalize_2" show="false"/>
-    <elementParameter field="TABLE" name="DENORMALIZE_COLUMNS">
+  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="1024">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_1" show="false"/>
+    <elementParameter field="TABLE" name="GROUPBYS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="filename_old"/>
       <elementValue elementRef="INPUT_COLUMN" value="filename_old"/>
-      <elementValue elementRef="DELIMITER" value="&quot;;&quot;"/>
-      <elementValue elementRef="MERGE" value="true"/>
-      <elementValue elementRef="INPUT_COLUMN" value="S21_G00_06_001"/>
-      <elementValue elementRef="DELIMITER" value="&quot;;&quot;"/>
-      <elementValue elementRef="MERGE" value="false"/>
     </elementParameter>
-    <elementParameter field="LABEL" name="NOTE" value=""/>
+    <elementParameter field="TABLE" name="OPERATIONS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="S21_G00_06_001"/>
+      <elementValue elementRef="FUNCTION" value="std_dev"/>
+      <elementValue elementRef="INPUT_COLUMN" value="S21_G00_06_001"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIST_DELIMITER" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="USE_FINANCIAL_PRECISION" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_TYPE_OVERFLOW" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_ULP" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDenormalize_2">
+    <metadata connector="FLOW" name="tAggregateRow_1">
       <column comment="" key="false" length="-1" name="filename_old" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="S21_G00_06_001" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -1142,11 +1147,11 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out2" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row16" lineStyle="0" metaname="tLogRow_13" offsetLabelX="0" offsetLabelY="0" source="tLogRow_13" target="tDenormalize_2">
+  <connection connectorName="FLOW" label="row16" lineStyle="0" metaname="tLogRow_13" offsetLabelX="0" offsetLabelY="0" source="tLogRow_13" target="tAggregateRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row16" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row17" lineStyle="0" metaname="tDenormalize_2" offsetLabelX="0" offsetLabelY="0" source="tDenormalize_2" target="tLogRow_14">
+  <connection connectorName="FLOW" label="row17" lineStyle="0" metaname="tAggregateRow_1" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_1" target="tLogRow_14">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row17" show="false"/>
   </connection>
