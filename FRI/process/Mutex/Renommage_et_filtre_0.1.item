@@ -1066,7 +1066,7 @@
   <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="1728">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_6" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_5"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_6"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Users/florian.richard/Documents/Logiciel/Talend-Studio-20180116_1512-V6.5.1/workspace/in.hash&quot;" show="false"/>
     <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -1089,7 +1089,7 @@
     <elementParameter field="DIRECTORY" name="SOURCE_DERECTORY" value="&quot;C:/Users/florian.richard/Documents/Logiciel/Talend-Studio-20180116_1512-V6.5.1/workspace&quot;" show="false"/>
     <elementParameter field="DIRECTORY" name="DESTINATION" value="&quot;C:/Users/florian.richard/Documents/Client/Mutex/File/OUT/&quot;"/>
     <elementParameter field="CHECK" name="RENAME" value="true"/>
-    <elementParameter field="TEXT" name="DESTINATION_RENAME" value="&quot;((String)globalMap.get(&quot;row23.filename_new&quot;))&quot;"/>
+    <elementParameter field="TEXT" name="DESTINATION_RENAME" value="&quot;((String)globalMap.get(&quot;row23.filename_new&quot;))&quot; + &quot;.DSN&quot;"/>
     <elementParameter field="CHECK" name="REMOVE_FILE" value="false"/>
     <elementParameter field="CHECK" name="REPLACE_FILE" value="true"/>
     <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
