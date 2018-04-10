@@ -534,7 +534,7 @@
         <mapperTableEntries name="order" expression="1" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="S20_G00_05_001" expression="row9.Valeur" type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="copyOfNIC" expressionFilter="&quot;S21.G00.11.001&quot;.equals(row9.Code)" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="copyOfNIC" expressionFilter="&quot;S10.G00.00.005&quot;.equals(row9.Code)" activateExpressionFilter="true">
         <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))" type="id_String" nullable="true"/>
         <mapperTableEntries name="order" expression="2" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="S21_G00_11_001" expression="row9.Valeur " type="id_String" nullable="true"/>
