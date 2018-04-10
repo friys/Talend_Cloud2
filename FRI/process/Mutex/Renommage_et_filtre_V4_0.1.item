@@ -1160,7 +1160,7 @@
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
     <elementParameter field="TABLE" name="VALUES">
       <elementValue elementRef="SCHEMA_COLUMN" value="ID_Suivi"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Date_Insertion"/>
       <elementValue elementRef="VALUE" value="TalendDate.getCurrentDate()"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Nom_Fichier_Old"/>
