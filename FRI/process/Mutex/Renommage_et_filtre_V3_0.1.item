@@ -315,37 +315,37 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Nature_declaration" expressionFilter="&quot;S20.G00.05.001&quot;.equals(row3.Code)" activateExpressionFilter="true">
-        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;row37.filename_old&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))" type="id_String" nullable="true"/>
         <mapperTableEntries name="order" expression="1" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="S20_G00_05_001" expression="row3.Valeur " type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="Envoi_EssaiReel" expressionFilter="&quot;S10.G00.00.005&quot;.equals(row3.Code)" activateExpressionFilter="true">
-        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;row37.filename_old&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))" type="id_String" nullable="true"/>
         <mapperTableEntries name="order" expression="2" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="S10_G00_00_005" expression="row3.Valeur " type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="SIREN" expressionFilter="&quot;S21.G00.06.001&quot;.equals(row3.Code)" activateExpressionFilter="true">
-        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;row37.filename_old&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))" type="id_String" nullable="true"/>
         <mapperTableEntries name="order" expression="3" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="S21_G00_06_001" expression="row3.Valeur" type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="NIC" expressionFilter="&quot;S21.G00.11.001&quot;.equals(row3.Code)" activateExpressionFilter="true">
-        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;row37.filename_old&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))" type="id_String" nullable="true"/>
         <mapperTableEntries name="order" expression="4" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="S21_G00_11_001" expression="row3.Valeur " type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="Date_Mois_Principal" expressionFilter="&quot;S20.G00.05.005&quot;.equals(row3.Code)" activateExpressionFilter="true">
-        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;row37.filename_old&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))" type="id_String" nullable="true"/>
         <mapperTableEntries name="order" expression="5" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="S20_G00_05_005" expression="StringHandling.RIGHT(row3.Valeur,4)+ StringHandling.LEFT(StringHandling.RIGHT(row3.Valeur,6),2) " type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="Num_Ordre_Declaration" expressionFilter="&quot;S20.G00.05.004&quot;.equals(row3.Code)" activateExpressionFilter="true">
-        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;row37.filename_old&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))" type="id_String" nullable="true"/>
         <mapperTableEntries name="order" expression="6" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="S20_G00_05_004" expression="row3.Valeur " type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="Num_Fraction_Declaration" expressionFilter="&quot;S20.G00.05.003&quot;.equals(row3.Code)" activateExpressionFilter="true">
-        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;row37.filename_old&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))" type="id_String" nullable="true"/>
         <mapperTableEntries name="order" expression="7" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="S20_G00_05_003" expression="row3.Valeur " type="id_String" nullable="true"/>
       </outputTables>
