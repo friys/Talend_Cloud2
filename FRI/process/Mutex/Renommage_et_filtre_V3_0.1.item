@@ -1448,7 +1448,7 @@
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out3" expressionFilter="&quot;01&quot;.equals(row43.Nature_declaration) &amp;&amp; &quot;02&quot;.equals(row43.Envoi_essaireel)" activateExpressionFilter="true">
         <mapperTableEntries name="filename_old" expression="row18.filename_old " type="id_String" nullable="true"/>
-        <mapperTableEntries name="filename_new" expression="row43.SIREN + &quot;-&quot; + row43.NIC + &quot;-&quot; + row43.Mois_principal_declare + &quot;-&quot; + row43.Num_ordre_declaration + &quot;-&quot; + row43.Num_fraction_declaration " type="id_String" nullable="true"/>
+        <mapperTableEntries name="filename_new" expression="row43.SIREN + &quot;-&quot; + row43.NIC + &quot;-&quot; + row43.Mois_principal_declare + &quot;-&quot; + row43.Num_ordre_declaration + &quot;-&quot; + row43.Num_fraction_declaration + &quot;.DSN&quot; " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row43" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="filename_old" type="id_String" nullable="true"/>
