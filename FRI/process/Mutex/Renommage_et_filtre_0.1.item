@@ -929,7 +929,7 @@
     </elementParameter>
     <elementParameter field="TABLE" name="OPERATIONS">
       <elementValue elementRef="OUTPUT_COLUMN" value="S21_G00_06_001"/>
-      <elementValue elementRef="FUNCTION" value="std_dev"/>
+      <elementValue elementRef="FUNCTION" value="list_object"/>
       <elementValue elementRef="INPUT_COLUMN" value="S21_G00_06_001"/>
       <elementValue elementRef="IGNORE_NULL" value="false"/>
     </elementParameter>
