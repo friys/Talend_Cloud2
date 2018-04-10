@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
   <TalendMetadata:DatabaseConnection xmi:id="_o1J04DzZEeiEJIMCEFoZ_g" name="PostgreSQL_Mutex" id="_ar7QYDzZEeiEJIMCEFoZ_g" label="PostgreSQL_Mutex" dataPackage="_pnU4sDzZEeiEJIMCEFoZ_g" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://localhost:5432/postgres" dbVersionString="PRIOR_TO_V9" Port="5432" Username="postgres" Password="" ServerName="localhost" DatasourceName="" FileFieldName="" SID="postgres" SqlSynthax="Syntaxe SQL" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="public">
     <taggedValue xmi:id="_o1J04TzZEeiEJIMCEFoZ_g" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_o1Tl4DzZEeiEJIMCEFoZ_g" tag="package filter" value=""/>
@@ -15,6 +15,12 @@
     <parameters xmi:id="_o1J04jzZEeiEJIMCEFoZ_g" key="CONN_PARA_KEY_USERNAME" value="postgres"/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_pnU4sDzZEeiEJIMCEFoZ_g" name="postgres" dataManager="_o1J04DzZEeiEJIMCEFoZ_g">
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_pnWG0DzZEeiEJIMCEFoZ_g" name="public"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_pnWG0DzZEeiEJIMCEFoZ_g" name="public">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_Xxd08DzaEeiEJIMCEFoZ_g" name="Mutex_Suivi_Fichier" id="_XxXuUDzaEeiEJIMCEFoZ_g" label="Mutex_Suivi_Fichier" tableType="TABLE">
+        <feature xsi:type="relational:TdColumn" xmi:id="_d13nYDzaEeiEJIMCEFoZ_g" name="ID_Suivi" label="ID_Suivi" length="10" sourceType="INT4" talendType="id_Integer" nullable="false" pattern="&quot;dd-MM-yyyy&quot;"/>
+        <feature xsi:type="relational:TdColumn" xmi:id="_d13nYTzaEeiEJIMCEFoZ_g" name="Date_Insertion" label="Date_Insertion" length="29" precision="6" sourceType="TIMESTAMP" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+        <feature xsi:type="relational:TdColumn" xmi:id="_d13nYjzaEeiEJIMCEFoZ_g" name="Nom_Fichier_Origin" label="Nom_Fichier_Origin" length="256" sourceType="VARCHAR" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      </ownedElement>
+    </ownedElement>
   </orgomg.cwm.resource.relational:Catalog>
 </xmi:XMI>
