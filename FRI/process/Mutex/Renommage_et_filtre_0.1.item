@@ -599,7 +599,7 @@
       <outputTables sizeState="INTERMEDIATE" name="Date_Mois_Principal" expressionFilter="&quot;S20.G00.05.005&quot;.equals(row3.Code)" activateExpressionFilter="true">
         <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))" type="id_String" nullable="true"/>
         <mapperTableEntries name="order" expression="3" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="S20_G00_05_005" expression="row3.Valeur " type="id_String" nullable="true"/>
+        <mapperTableEntries name="S20_G00_05_005" expression="StringHandling.RIGHT(row3.Valeur,4)+ StringHandling.LEFT(StringHandling.RIGHT(row3.Valeur,6),2) " type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="Num_Ordre_Declaration" expressionFilter="&quot;S20.G00.05.004&quot;.equals(row3.Code)" activateExpressionFilter="true">
         <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))" type="id_String" nullable="true"/>
