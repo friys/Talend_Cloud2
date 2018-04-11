@@ -261,6 +261,7 @@
       <relatedItems xmi:id="_5ARYwDmkEei6jKnglsD76A" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_5ARYwTmkEei6jKnglsD76A" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_5ARYwjmkEei6jKnglsD76A" id="_0jnnMDmkEei6jKnglsD76A - Mutex_dsn" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_ELw6QD2WEeiEJIMCEFoZ_g" id="_jKBpkD2TEeiEJIMCEFoZ_g" version="Latest" type="mapper"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_4Sk18Dv5Eei6jKnglsD76A">
       <baseItem xmi:id="_4Sk18Tv5Eei6jKnglsD76A" id="_UM0IsDv5Eei6jKnglsD76A" version="0.1" type="job"/>
