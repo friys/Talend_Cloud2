@@ -1048,40 +1048,40 @@
       <column comment="" key="false" length="100" name="S20_G00_05_003" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Nature_declaration" expressionFilter="&quot;S20.G00.05.001&quot;.equals(row3.Code)" activateExpressionFilter="true">
-        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;row27.Name&quot;))" type="id_String" nullable="true"/>
         <mapperTableEntries name="order" expression="1" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="S20_G00_05_001" expression="row3.Valeur " type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="Envoi_EssaiReel" expressionFilter="&quot;S10.G00.00.005&quot;.equals(row3.Code)" activateExpressionFilter="true">
-        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;row27.Name&quot;))" type="id_String" nullable="true"/>
         <mapperTableEntries name="order" expression="2" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="S10_G00_00_005" expression="row3.Valeur " type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="SIREN" expressionFilter="&quot;S21.G00.06.001&quot;.equals(row3.Code)" activateExpressionFilter="true">
-        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;row27.Name&quot;))" type="id_String" nullable="true"/>
         <mapperTableEntries name="order" expression="3" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="S21_G00_06_001" expression="row3.Valeur" type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="NIC" expressionFilter="&quot;S21.G00.11.001&quot;.equals(row3.Code)" activateExpressionFilter="true">
-        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;row27.Name&quot;))" type="id_String" nullable="true"/>
         <mapperTableEntries name="order" expression="4" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="S21_G00_11_001" expression="row3.Valeur " type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="Date_Mois_Principal" expressionFilter="&quot;S20.G00.05.005&quot;.equals(row3.Code)" activateExpressionFilter="true">
-        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;row27.Name&quot;))" type="id_String" nullable="true"/>
         <mapperTableEntries name="order" expression="5" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="S20_G00_05_005" expression="StringHandling.RIGHT(row3.Valeur,4)+ StringHandling.LEFT(StringHandling.RIGHT(row3.Valeur,6),2) " type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="Num_Ordre_Declaration" expressionFilter="&quot;S20.G00.05.004&quot;.equals(row3.Code)" activateExpressionFilter="true">
-        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;row27.Name&quot;))" type="id_String" nullable="true"/>
         <mapperTableEntries name="order" expression="6" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="S20_G00_05_004" expression="row3.Valeur " type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="Num_Fraction_Declaration" expressionFilter="&quot;S20.G00.05.003&quot;.equals(row3.Code)" activateExpressionFilter="true">
-        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="filename_old" expression="((String)globalMap.get(&quot;row27.Name&quot;))" type="id_String" nullable="true"/>
         <mapperTableEntries name="order" expression="7" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="S20_G00_05_003" expression="row3.Valeur " type="id_String" nullable="true"/>
       </outputTables>
@@ -1615,31 +1615,15 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="Num_Fraction_Declaration" lineStyle="0" metaname="Num_Fraction_Declaration" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tLogRow_7">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="filename_old"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="order"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
+  <connection connectorName="FLOW" label="Nature_declaration" lineStyle="0" metaname="Nature_declaration" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tLogRow_22">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Num_Fraction_Declaration" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Nature_declaration" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="Num_Ordre_Declaration" lineStyle="0" metaname="Num_Ordre_Declaration" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tLogRow_6">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="filename_old"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="order"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
+  <connection connectorName="FLOW" label="Envoi_EssaiReel" lineStyle="0" metaname="Envoi_EssaiReel" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tLogRow_21">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Num_Ordre_Declaration" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Envoi_EssaiReel" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="Date_Mois_Principal" lineStyle="0" metaname="Date_Mois_Principal" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tMap_1" target="tLogRow_5">
+  <connection connectorName="FLOW" label="SIREN" lineStyle="0" metaname="SIREN" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tMap_1" target="tLogRow_3">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="filename_old"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
@@ -1649,7 +1633,7 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Date_Mois_Principal" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="SIREN" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="NIC" lineStyle="0" metaname="NIC" offsetLabelX="0" offsetLabelY="0" outputId="4" source="tMap_1" target="tLogRow_4">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -1663,7 +1647,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="NIC" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="SIREN" lineStyle="0" metaname="SIREN" offsetLabelX="0" offsetLabelY="0" outputId="5" source="tMap_1" target="tLogRow_3">
+  <connection connectorName="FLOW" label="Date_Mois_Principal" lineStyle="0" metaname="Date_Mois_Principal" offsetLabelX="0" offsetLabelY="0" outputId="5" source="tMap_1" target="tLogRow_5">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="filename_old"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
@@ -1673,15 +1657,31 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="SIREN" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Date_Mois_Principal" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="Envoi_EssaiReel" lineStyle="0" metaname="Envoi_EssaiReel" offsetLabelX="0" offsetLabelY="0" outputId="6" source="tMap_1" target="tLogRow_21">
+  <connection connectorName="FLOW" label="Num_Ordre_Declaration" lineStyle="0" metaname="Num_Ordre_Declaration" offsetLabelX="0" offsetLabelY="0" outputId="6" source="tMap_1" target="tLogRow_6">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="filename_old"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="order"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Envoi_EssaiReel" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Num_Ordre_Declaration" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="Nature_declaration" lineStyle="0" metaname="Nature_declaration" offsetLabelX="0" offsetLabelY="0" outputId="7" source="tMap_1" target="tLogRow_22">
+  <connection connectorName="FLOW" label="Num_Fraction_Declaration" lineStyle="0" metaname="Num_Fraction_Declaration" offsetLabelX="0" offsetLabelY="0" outputId="7" source="tMap_1" target="tLogRow_7">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="filename_old"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="order"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Nature_declaration" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Num_Fraction_Declaration" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tLogRow_3" offsetLabelX="0" offsetLabelY="0" source="tLogRow_3" target="tHashOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
