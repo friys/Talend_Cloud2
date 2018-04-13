@@ -462,7 +462,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="out2" expressionFilter="Arrays.asList('S21.G00.30.006','S21.G00.30.007').contains(row4.Code)" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="out2" expressionFilter="Arrays.asList(&quot;S21.G00.30.006&quot;,&quot;S21.G00.30.007&quot;).contains(row4.Code)" activateExpressionFilter="true">
         <mapperTableEntries name="Code" expression="row4.Code " type="id_String" nullable="true"/>
         <mapperTableEntries name="Valeur" expression="row4.Valeur " type="id_String" nullable="true"/>
       </outputTables>
