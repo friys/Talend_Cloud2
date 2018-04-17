@@ -1139,9 +1139,8 @@
   </node>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="3200" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_5" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/florian.richard/Documents/Client/Mutex/File/Traitement/Individu_unitaire.txt&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/florian.richard/Documents/Client/Mutex/File/Traitement/Individu_unitaire_&quot; + ((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;)) + &quot;_&quot; + ((Integer)globalMap.get(&quot;tFlowToIterate_2_CURRENT_ITERATION&quot;)) + &quot;.txt&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
@@ -1195,7 +1194,6 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="3392" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_13" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -1372,7 +1370,6 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row19" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputRaw_4" offsetLabelX="0" offsetLabelY="0" source="tFileOutputRaw_4" target="tFileInputDelimited_5">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row17" lineStyle="0" metaname="tFileInputDelimited_4" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_4" target="tLogRow_11">
@@ -1405,7 +1402,6 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row20" show="false"/>
   </connection>
   <subjob>
