@@ -45,7 +45,7 @@ public class tst_md5_s {
 			byte[] uniqueKey = key.getBytes();
 				byte[] hash = null;
 				try {
-					hash = MessageDigest.getInstance("MD5").digest(uniqueKey);
+					hash = MessageDigest.getInstance("SHA").digest(uniqueKey);
 				} catch (NoSuchAlgorithmException e) {
 					throw new Error("no MD5 support");
 				}
