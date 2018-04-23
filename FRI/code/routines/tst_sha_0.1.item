@@ -1,4 +1,6 @@
 package routines;
+import java.security.MessageDigest;
+
 
 /*
  * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
@@ -32,6 +34,30 @@ public class tst_sha {
      * 
      * {example} helloExemple("world") # hello world !.
      */
+	
+	
+	public static String encodeSha256(String value) {
+        try{
+            if (value==null || "".equals(value))
+                return null;
+            
+            MessageDigest md = MessageDigest.getInstance("SHA-256");
+            md.update(value.getBytes());
+            return bytesToHex(md.digest());
+        } catch(Exception ex){
+            throw new RuntimeException(ex);
+        }
+     }
+   
+     private static String bytesToHex(byte[] bytes) {
+        StringBuffer result = new StringBuffer();
+        for (byte b : bytes) result.append(Integer.toString((b & 0xff) + 0x100, 16).substring(1));
+        return result.toString();
+     }   
+	
+	
+	
+	
     public static void helloExample(String message) {
         if (message == null) {
             message = "World"; //$NON-NLS-1$
