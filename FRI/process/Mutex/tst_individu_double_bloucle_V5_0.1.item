@@ -701,7 +701,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out4">
-        <mapperTableEntries name="tst" expression="Numeric.sequence(row8.Code==&quot;S21.G00.30.001&quot;,1,1) " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="tst" expression="Numeric.sequence(&quot;S21.G00.30.001&quot;.equals(row8.Code),1,1) " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Code" expression="row8.Code + &quot;@&quot; + row8.Valeur" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row8" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
