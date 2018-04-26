@@ -702,7 +702,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out4">
-        <mapperTableEntries name="tst" expression="Numeric.sequence(&quot;s1&quot;,1,1) " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="tst" expression="Numeric.sequence(row8.Code,1,1)" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Code" expression="row8.Code " type="id_String" nullable="true"/>
         <mapperTableEntries name="Valeur" expression="row8.Valeur " type="id_String" nullable="true"/>
       </outputTables>
