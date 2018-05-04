@@ -1034,7 +1034,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="individu" expressionFilter="&quot;S21.G00.30&quot;.equals(StringHandling.LEFT(row23.code,10))" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="individu" expressionFilter="&quot;'S21.G00.30&quot;.equals(StringHandling.LEFT(row23.code,11))" activateExpressionFilter="true">
         <mapperTableEntries name="code" expression="row23.code " type="id_String" nullable="true"/>
         <mapperTableEntries name="value" expression="row23.value " type="id_String" nullable="true"/>
       </outputTables>
