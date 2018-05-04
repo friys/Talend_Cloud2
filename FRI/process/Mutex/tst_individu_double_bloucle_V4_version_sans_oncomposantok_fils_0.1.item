@@ -721,8 +721,6 @@
     <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
     <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
     <elementParameter field="TABLE" name="CONTEXTPARAMS">
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="line"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((String)globalMap.get(&quot;row13.file&quot;))"/>
       <elementValue elementRef="PARAM_NAME_COLUMN" value="ite"/>
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="((Integer)globalMap.get(&quot;tFlowToIterate_2_CURRENT_ITERATION&quot;))"/>
       <elementValue elementRef="PARAM_NAME_COLUMN" value="nom_fichier"/>
