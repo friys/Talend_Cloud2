@@ -558,8 +558,8 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfindividu" expressionFilter="&quot;'S21.G00.40&quot;.equals(StringHandling.LEFT(row2.code,11))" activateExpressionFilter="true">
-        <mapperTableEntries name="code" expression="row2.code " type="id_String" nullable="true"/>
-        <mapperTableEntries name="value" expression="row2.value " type="id_String" nullable="true"/>
+        <mapperTableEntries name="code" expression="StringHandling.RIGHT(StringHandling.LEFT(row2.code,StringHandling.LEN(row2.code)-1),StringHandling.LEN(row2.code)-2) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="value" expression="StringHandling.RIGHT(StringHandling.LEFT(row2.value,StringHandling.LEN(row2.value)-1),StringHandling.LEN(row2.value)-2) " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="code" type="id_String" nullable="true"/>
