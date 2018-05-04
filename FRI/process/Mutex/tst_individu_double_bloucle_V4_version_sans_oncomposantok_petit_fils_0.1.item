@@ -507,7 +507,7 @@
   </node>
   <node componentName="tFileOutputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1504" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputRaw_4" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/florian.richard/Documents/Client/Mutex/File/Traitement/Individu_unitaire_&quot; + con + &quot;_&quot; + ((Integer)globalMap.get(&quot;tFlowToIterate_2_CURRENT_ITERATION&quot;)) + &quot;.txt&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/florian.richard/Documents/Client/Mutex/File/Traitement/Individu_unitaire_&quot; + context.nom_fichier + &quot;_&quot; + context.ite + &quot;.txt&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
