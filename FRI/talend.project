@@ -650,6 +650,7 @@
       <relatedItems xmi:id="_qD7e0E-pEei0buVMd-6G7w" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_qD7e0U-pEei0buVMd-6G7w" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_qD7e0k-pEei0buVMd-6G7w" id="_0jnnMDmkEei6jKnglsD76A - Mutex_dsn" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_5SGnME-rEei0buVMd-6G7w" id="_ssUdUE-pEei0buVMd-6G7w" version="Latest" type="job"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_sswiME-pEei0buVMd-6G7w">
       <baseItem xmi:id="_sswiMU-pEei0buVMd-6G7w" id="_ssUdUE-pEei0buVMd-6G7w" version="0.1" type="job"/>
