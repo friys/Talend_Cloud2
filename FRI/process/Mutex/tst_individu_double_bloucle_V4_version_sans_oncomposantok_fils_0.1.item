@@ -698,7 +698,7 @@
       <elementValue elementRef="PARAM_NAME_COLUMN" value="line"/>
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="((String)globalMap.get(&quot;row13.file&quot;))"/>
       <elementValue elementRef="PARAM_NAME_COLUMN" value="ite"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((Integer)globalMap.get(&quot;tFlowToIterate_2_CURRENT_ITERATION&quot;))"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((String)globalMap.get(&quot;tFlowToIterate_2_CURRENT_ITERATION&quot;))"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
